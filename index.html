@@ -13,6 +13,24 @@
         nav a { color: #fff; text-decoration: none; padding: 10px 20px; }
         section { padding: 20px; }
         footer { background: #333; color: #fff; text-align: center; padding: 10px; }
+        .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-gap: 20px;
+            }
+            
+            .project {
+                border: 1px solid #ddd;
+                padding: 15px;
+                border-radius: 8px;
+            }
+            
+            .project img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+        }
+
     </style>
 </head>
 <body>
@@ -51,19 +69,21 @@ I am passionate about leveraging my technical expertise and strategic insights t
     <section id="projects">
     <div class="container">
         <h2>Projects</h2>
-        <div class="project">
-            <img src="Images/Protein.jpeg" alt="Project Image" style="width:15%;height:auto;">
-            <h3>Graph Machine Learning</h3>
-            <p>This is a Graph Machine Learning project where Protein Sequence generation is done using Graph Generation techniques and Classified them using State of the Art Classifiers. </p>
-            <a href="https://github.com/deepesh-dwivedi/Protein_Generation" target="_blank">View on GitHub</a>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="Images/Protein.jpeg" alt="Graph Machine Learning">
+                <h3>Graph Machine Learning</h3>
+                <p>This is a Graph Machine Learning project...</p>
+                <a href="https://github.com/deepesh-dwivedi/Protein_Generation" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <img src="Images/Sentiment.jpeg" alt="Natural Language Processing">
+                <h3>Natural Language Processing</h3>
+                <p>Sentiment Analysis project...</p>
+                <a href="https://github.com/deepesh-dwivedi/Opinion-polarity-NLP" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Repeat this block for each project -->
         </div>
-        <div class="project">
-            <img src="Images/Sentiment.jpeg" alt="Project Image" style="width:15%;height:auto;">
-            <h3>Natural Language Processing</h3>
-            <p>Sentiment Analysis project, created word embeddings and used state of the art RoBERTa model to do sentiment prediction. </p>
-            <a href="https://github.com/deepesh-dwivedi/Opinion-polarity-NLP" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Repeat this block for each project -->
     </div>
 </section>
     <section id="contact">
